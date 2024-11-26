@@ -12,6 +12,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -25,9 +26,9 @@ public class BaseClass {
 	ExcelUtility eLib = new ExcelUtility();
 	JavaUtility jLib = new JavaUtility();
 	public WebDriver driver = null;
-	
+
 	public static WebDriver sdriver = null;
-	
+
 	public ExtentSparkReporter spark;
 	public ExtentReports report;
 
@@ -37,9 +38,10 @@ public class BaseClass {
 		System.out.println(" connect to DB");
 		DbLib.getDBConnection();
 	}
+
 	@Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
-	public void configBC() throws Throwable {
+	public void configBC(@Optional("chrome") String browser) throws Throwable {
 
 		String BROWSER = fLib.getDataFromPropertiesFile("browser");
 		if (BROWSER.equals("chrome")) {
@@ -56,7 +58,7 @@ public class BaseClass {
 
 	@AfterClass(alwaysRun = true)
 	public void configAC() {
-wLib.Closewindow(driver);
+		wLib.Closewindow(driver);
 
 		System.out.println("Close the browser");
 

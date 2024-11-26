@@ -2,6 +2,7 @@ package Admin_Module;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Easy_Purse.S_S.GenericUtility.BaseClass;
@@ -12,7 +13,7 @@ import com.Easy_Purse.S_S.GenericUtility.WebDriverUtility;
 import com.Easy_Purse.S_S.ObjectRepository.AdminloginPage;
 import com.Easy_Purse.S_S.ObjectRepository.CreateCategoryPage;
 import com.Easy_Purse.S_S.ObjectRepository.CreateSubCtegoryPage;
-
+@Listeners(com.Easy_Purse.S_S.GenericUtility.Listner_implementation.class)
 public class AdminLoginTest extends BaseClass {
 	FileUtility fLib = new FileUtility();
 	ExcelUtility eLib = new ExcelUtility();

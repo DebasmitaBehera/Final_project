@@ -3,6 +3,7 @@ package User_Module;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Easy_Purse.S_S.GenericUtility.BaseClass;
@@ -13,7 +14,7 @@ import com.Easy_Purse.S_S.GenericUtility.WebDriverUtility;
 import com.Easy_Purse.S_S.ObjectRepository.CheckOutProcessPage;
 import com.Easy_Purse.S_S.ObjectRepository.UserLoginPage;
 import com.Easy_Purse.S_S.ObjectRepository.VerifyWishlistPage;
-
+@Listeners(com.Easy_Purse.S_S.GenericUtility.Listner_implementation.class)
 public class UserLoginTest extends BaseClass {
 	FileUtility fLib = new FileUtility();
 	ExcelUtility eLib = new ExcelUtility();
