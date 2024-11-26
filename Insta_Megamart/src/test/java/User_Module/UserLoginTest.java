@@ -55,7 +55,6 @@ public class UserLoginTest extends BaseClass {
 		check.SelectProduct(ProductName);
 		WebElement addBtn = driver.findElement(By.xpath("//a[text()='" + ProductName
 				+ "']/parent::h3/parent::div/following-sibling::div//button[text()='Add to cart']"));
-		Thread.sleep(20);
 		wLib.javascriptexecutor(driver, addBtn);
 		driver.switchTo().alert().accept();
 		check.checkout(ProductName, ProductName, ProductName, ProductName, URL, USERNAME, PASSWORD, ProductName);

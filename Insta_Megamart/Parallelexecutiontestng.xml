@@ -7,10 +7,8 @@
       <class name="Admin_Module.AdminLoginTest"/>
     </classes>
   </test> <!-- Test -->
-      <test name="Test-2">
-    
-    <classes>
-      <class name="User_Module.UserLoginTest"/>
+      <test name="Test-2"> 
+    <classes> 
       <class name="Admin_Module.AdminLoginTest"/>
     </classes>
      </test> <!-- Test -->

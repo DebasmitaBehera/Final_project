@@ -2,20 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="regressionTest"/>
-      </run>
-    </groups>
     <classes>
       <class name="User_Module.UserLoginTest">
         <methods>
+          <include name="VerifyPayment"/>
+          <include name="VerfifyWishlist"/>
           <include name="configBC"/>
           <include name="configBS"/>
           <include name="configAC"/>
           <include name="configAS"/>
-          <include name="UserLogin"/>
-          <include name="CheckOutProcess"/>
         </methods>
       </class> <!-- User_Module.UserLoginTest -->
     </classes>

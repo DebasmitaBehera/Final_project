@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Suite">
-  <test name="Test-1">
+<suite parallel="tests" thread-count="2" name="Suite">
+  <test name="Test-Chrome">
   <parameter name="BROWSER" value="chrome"/>
     <classes>
       <class name="User_Module.UserLoginTest"/>
-      <class name="Admin_Module.AdminLoginTest"/>
-    </classes>
+      </classes>
     </test>
-      <test name="Test-2">
+    
+      <test name="Test-Firefox">
       <parameter name="BROWSER" value="firefox"/>
     <classes>
-      <class name="User_Module.UserLoginTest"/>
       <class name="Admin_Module.AdminLoginTest"/>
     </classes>
   </test> <!-- Test -->

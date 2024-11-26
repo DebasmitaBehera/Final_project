@@ -1,41 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-26T08:29:14 IST" name="Suite" finished-at="2024-11-26T08:29:37 IST" duration-ms="22962">
+  <suite started-at="2024-11-26T18:16:14 IST" name="Suite" finished-at="2024-11-26T18:16:14 IST" duration-ms="0">
     <groups>
       <group name="regressionTest">
-        <method signature="UserLoginTest.CheckOutProcess()[pri:0, instance:User_Module.UserLoginTest@2a693f59]" name="CheckOutProcess" class="User_Module.UserLoginTest"/>
-        <method signature="UserLoginTest.UserLogin()[pri:0, instance:User_Module.UserLoginTest@2a693f59]" name="UserLogin" class="User_Module.UserLoginTest"/>
+        <method signature="UserLoginTest.CheckOutProcess()[pri:0, instance:User_Module.UserLoginTest@7ae0a9ec]" name="CheckOutProcess" class="User_Module.UserLoginTest"/>
+        <method signature="UserLoginTest.UserLogin()[pri:0, instance:User_Module.UserLoginTest@7ae0a9ec]" name="UserLogin" class="User_Module.UserLoginTest"/>
+        <method signature="AdminLoginTest.createcategory()[pri:0, instance:Admin_Module.AdminLoginTest@7e990ed7]" name="createcategory" class="Admin_Module.AdminLoginTest"/>
       </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="UserLoginTest.VerfifyWishlist()[pri:0, instance:User_Module.UserLoginTest@7ae0a9ec]" name="VerfifyWishlist" class="User_Module.UserLoginTest"/>
+        <method signature="UserLoginTest.VerifyPayment()[pri:0, instance:User_Module.UserLoginTest@7ae0a9ec]" name="VerifyPayment" class="User_Module.UserLoginTest"/>
+        <method signature="AdminLoginTest.adminlogin()[pri:0, instance:Admin_Module.AdminLoginTest@7e990ed7]" name="adminlogin" class="Admin_Module.AdminLoginTest"/>
+        <method signature="AdminLoginTest.createSubCategory()[pri:0, instance:Admin_Module.AdminLoginTest@7e990ed7]" name="createSubCategory" class="Admin_Module.AdminLoginTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2024-11-26T08:29:14 IST" name="Test" finished-at="2024-11-26T08:29:37 IST" duration-ms="22962">
-      <class name="User_Module.UserLoginTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:User_Module.UserLoginTest@2a693f59]" started-at="2024-11-26T08:29:13 IST" name="configBS" finished-at="2024-11-26T08:29:14 IST" duration-ms="1434" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:User_Module.UserLoginTest@2a693f59]" started-at="2024-11-26T08:29:14 IST" name="configBC" finished-at="2024-11-26T08:29:21 IST" duration-ms="6698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method signature="CheckOutProcess()[pri:0, instance:User_Module.UserLoginTest@2a693f59]" started-at="2024-11-26T08:29:21 IST" name="CheckOutProcess" finished-at="2024-11-26T08:29:33 IST" duration-ms="11717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckOutProcess -->
-        <test-method signature="UserLogin()[pri:0, instance:User_Module.UserLoginTest@2a693f59]" started-at="2024-11-26T08:29:33 IST" name="UserLogin" finished-at="2024-11-26T08:29:36 IST" duration-ms="3604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserLogin -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:User_Module.UserLoginTest@2a693f59]" started-at="2024-11-26T08:29:36 IST" name="configAC" finished-at="2024-11-26T08:29:37 IST" duration-ms="822" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:User_Module.UserLoginTest@2a693f59]" started-at="2024-11-26T08:29:37 IST" name="configAS" finished-at="2024-11-26T08:29:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAS -->
-      </class> <!-- User_Module.UserLoginTest -->
-    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

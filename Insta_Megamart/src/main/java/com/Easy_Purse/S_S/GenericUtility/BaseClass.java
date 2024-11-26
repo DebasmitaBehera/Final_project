@@ -26,9 +26,7 @@ public class BaseClass {
 	ExcelUtility eLib = new ExcelUtility();
 	JavaUtility jLib = new JavaUtility();
 	public WebDriver driver = null;
-
 	public static WebDriver sdriver = null;
-
 	public ExtentSparkReporter spark;
 	public ExtentReports report;
 
@@ -41,9 +39,10 @@ public class BaseClass {
 
 	@Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
-	public void configBC(@Optional("chrome") String browser) throws Throwable {
+	public void configBC(@Optional("chrome")String browser) throws Throwable {
 
-		String BROWSER = fLib.getDataFromPropertiesFile("browser");
+		String BROWSER = browser;
+		System.out.println("Launch the browser"+ browser);
 		if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (BROWSER.equals("edge")) {
@@ -52,16 +51,13 @@ public class BaseClass {
 			driver = new FirefoxDriver();
 		}
 		sdriver = driver;
-
 		System.out.println("Launch the browser");
 	}
 
 	@AfterClass(alwaysRun = true)
 	public void configAC() {
 		wLib.Closewindow(driver);
-
 		System.out.println("Close the browser");
-
 	}
 
 	@AfterSuite(alwaysRun = true)

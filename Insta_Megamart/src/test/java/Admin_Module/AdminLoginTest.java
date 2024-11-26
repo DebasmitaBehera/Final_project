@@ -32,7 +32,7 @@ public class AdminLoginTest extends BaseClass {
 		Assert.assertTrue(actulresult.contains(expectedresult));
 	}
 
-	@Test(groups = "regression")
+	@Test(groups = "regressionTest")
 
 	public void createcategory() throws Throwable {
 		String URL = fLib.getDataFromPropertiesFile("url") ;
