@@ -34,7 +34,7 @@ public class AdminLoginTest extends BaseClass {
 	@Test(groups = "regression")
 
 	public void createcategory() throws Throwable {
-		String URL = fLib.getDataFromPropertiesFile("url");
+		String URL = fLib.getDataFromPropertiesFile("url") ;
 		String USERNAME = fLib.getDataFromPropertiesFile("adminusername");
 		String PASSWORD = fLib.getDataFromPropertiesFile("adminpassword");
 		AdminloginPage alogin = new AdminloginPage(driver);
